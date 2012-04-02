@@ -11,7 +11,7 @@ body {
 	letter-spacing: 0.1em;
 	margin: 0 0 7px;
 	margin-top: 100px;
-	padding: 0 0 30px;
+	padding: 0 0 25px;
 	text-transform: uppercase;
 }
 
@@ -39,11 +39,12 @@ body {
 
 a {
 	text-decoration: none;
+        font-size:150%;
 }
 
 #my_info {
 	position: relative;
-	font: italic 15px/160% Georgia, "Times New Roman", Times, serif;
+	font: italic 15px/200% Georgia, "Times New Roman", Times, serif;
 	width: 70%;
 	top: 180px;
 	margin-left: 15px;
@@ -52,7 +53,7 @@ a {
 #photo {
 	position: relative;
 	float: right;
-	top:-60px;
+	top:-50px;
 	right:80px;
 }
 img{
@@ -61,3 +62,13 @@ img{
 	border-radius:5px;
 	
 }
+h1{
+     color: blue;
+    font-family: CopseRegular,Arial,Helvetica,sans-serif;
+    font-size: 5.5em;
+    line-height: 1em;
+    text-shadow: 5px 3px 1px #EEEEEE;
+    text-transform: lowercase;
+}
+
+

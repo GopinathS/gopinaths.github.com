@@ -1,0 +1,21 @@
+body {
+	background-color: white;
+}
+
+#about-me {
+	   border-bottom: 1px solid #DDDDDD;
+    color: #000000;
+    font: bold 12px/110% Georgia,"Times New Roman",Times,serif;
+    letter-spacing: 0.1em;
+    margin: 0 0 7px;
+    padding: 0 0 10px;
+    text-transform: uppercase;
+    
+
+}
+
+#about-content{
+	background-color: white;
+	margin-left: 10px;
+	margin-right: 10px;
+}

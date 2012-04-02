@@ -11,8 +11,9 @@ body {
 	letter-spacing: 0.1em;
 	margin: 0 0 7px;
 	margin-top: 100px;
-	padding: 0 0 25px;
+	padding: 0 0 50px;
 	text-transform: uppercase;
+        margin-left: 10px;
 }
 
 #about-content {
@@ -25,6 +26,7 @@ body {
 #home {
 	position: absolute;
 	left: 20px;
+
 }
 
 #posts {
@@ -40,6 +42,7 @@ body {
 a {
 	text-decoration: none;
         font-size:150%;
+      color:#020800;
 }
 
 #my_info {
@@ -47,28 +50,56 @@ a {
 	font: italic 15px/200% Georgia, "Times New Roman", Times, serif;
 	width: 70%;
 	top: 180px;
-	margin-left: 15px;
+	margin-left: 25px;
 }
 
 #photo {
 	position: relative;
 	float: right;
-	top:-50px;
+	top:-120px;
 	right:80px;
+ box-shadow: 12px 12px 12px #000;
 }
 img{
 	width:200px;
 	height: 200px;
 	border-radius:5px;
+       
+        
 	
 }
 h1{
-     color: blue;
+     color: #78AD07;
     font-family: CopseRegular,Arial,Helvetica,sans-serif;
-    font-size: 5.5em;
+    font-size: 4.5em;
     line-height: 1em;
     text-shadow: 5px 3px 1px #EEEEEE;
     text-transform: lowercase;
+    margin-left: 25px;
 }
+h2{
+color: #78AD07;
+font-size: 2.5em;
+width:300px;
+box-shadow: 9px 9px 9px #000; 
 
+}
+.shadow{
+box-shadow: 9px 9px 9px #000;
+} 
+
+h3{
+color: #78AD07;
+font-size: 2.0em;
+
+}
+h4{
+color: #78AD07;
+font-size: 1.5em;
+
+}
+.link{
+color: #78AD07;
+font-size: 1.5em;
+}
 

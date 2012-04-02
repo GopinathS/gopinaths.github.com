@@ -2,20 +2,55 @@ body {
 	background-color: white;
 }
 
-#about-me {
-	   border-bottom: 1px solid #DDDDDD;
-    color: #000000;
-    font: bold 12px/110% Georgia,"Times New Roman",Times,serif;
-    letter-spacing: 0.1em;
-    margin: 0 0 7px;
-    padding: 0 0 10px;
-    text-transform: uppercase;
-    
-
+#menubar {
+	position: absolute;
+	width: 500px;
+	border-bottom: 1px solid #DDDDDD;
+	color: #000000;
+	font: bold 15px/160% Georgia, "Times New Roman", Times, serif;
+	letter-spacing: 0.1em;
+	margin: 0 0 7px;
+	margin-top:100px;
+	padding: 0 0 30px;
+	text-transform: uppercase;
 }
 
-#about-content{
+#about-content {
+	left: 350px;
+	top: 35px;
 	background-color: white;
-	margin-left: 10px;
-	margin-right: 10px;
+	padding-top: 40px;
+}
+
+#home {
+	position: absolute;
+	left: 20px;
+}
+#posts{
+	position: absolute;
+	left: 130px;
+}
+
+#About_me {
+	position: absolute;
+	left: 350px;
+}
+a{
+	text-decoration:  none;
+}
+#my_info{
+	position:absolute;
+	font: italic 15px/160% Georgia, "Times New Roman", Times, serif;
+	width:850px;
+	margin-top:180px;
+	margin-left:15px;
+}
+#photo{
+	
+	
+	position:relative;
+	float:right;
+	margin-top:180px;
+	
+	
 }

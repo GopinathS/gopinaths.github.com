@@ -52,7 +52,7 @@ a {
 #photo {
 	position: relative;
 	float: right;
-	top:-50px;
+	top:-60px;
 	right:80px;
 }
 img{

@@ -1,16 +1,30 @@
-body {
-	background-color: white;
+body
+{
+background-image:url('../Images/bg.png');
+background-position: center top;
+background-repeat:no-repeat;
+background-size:100% 200%;
+max-height:1500px;
 }
+#container{
 
+background-color:white;
+width:80%;
+height:200%;
+margin-left:140px;
+margin-right:150px;
+border-radius:10px;
+overflow:auto;
+
+}
 #menubar {
-	position: absolute;
+	position: relative;
 	width: 500px;
 	border-bottom: 1px solid #DDDDDD;
 	color: #000000;
 	font: bold 15px/160% Georgia, "Times New Roman", Times, serif;
 	letter-spacing: 0.1em;
 	margin: 0 0 7px;
-	margin-top: 100px;
 	padding: 0 0 50px;
 	text-transform: uppercase;
         margin-left: 10px;
@@ -47,17 +61,17 @@ a {
 #my_info {
 	position: relative;
 	font: italic 15px/200% Georgia, "Times New Roman", Times, serif;
-	width: 70%;
-	top: 180px;
+	width: 60%;
+	top: 50px;
 	margin-left: 25px;
 }
 
 #photo {
 	position: relative;
 	float: right;
-	top:-120px;
 	right:80px;
- box-shadow: 12px 12px 12px #000;
+        top: -150px;
+        box-shadow: 12px 12px 12px #000;
 }
 .photo {
 	width:250px;
@@ -89,9 +103,12 @@ box-shadow: 9px 9px 9px #000;
 
 }
 .shadow{
+
 box-shadow: 9px 9px 9px #000;
 } 
-
+.border{
+border-bottom: 1px solid #DDDDDD;
+}
 h3{
 color: #78AD07;
 font-size: 2.0em;
@@ -106,4 +123,16 @@ font-size: 1.5em;
 color: #78AD07;
 font-size: 1.0em;
 }
+#sidetab{
+background: none repeat scroll 0 0 white;
+    position:fixed;
+    float: right;
 
+border-style:solid;
+border-left-width:thin;
+border-color:#78AD07;
+    right:160px;
+    top:200px; 
+    padding: 0 15px 30px;
+    width: 300px;
+}

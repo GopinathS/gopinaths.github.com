@@ -10,7 +10,7 @@ max-height:1500px;
 
 background-color:white;
 width:80%;
-height:500px;
+height:950px;
 margin-top:20px;
 margin-left:140px;
 margin-right:150px;
@@ -101,7 +101,7 @@ h1{
 h2{
 color: #78AD07;
 font-size: 2.5em;
-width:300px;
+width:400px;
 box-shadow: 9px 9px 9px #000; 
 
 }

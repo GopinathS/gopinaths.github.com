@@ -44,7 +44,6 @@ a {
         font-size:150%;
       color:#020800;
 }
-
 #my_info {
 	position: relative;
 	font: italic 15px/200% Georgia, "Times New Roman", Times, serif;

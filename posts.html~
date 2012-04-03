@@ -76,6 +76,7 @@ $cd C                             ----------->4<br>
 $pushd D                       ----------->5<br>
 $cd E                             ----------->6<br>
 
+
 $pwd<br>
 
 You will be in the last directory E.<br>

@@ -57,6 +57,11 @@ a {
 	text-decoration: none;
         font-size:150%;
       color:#020800;
+
+}
+a:visited {
+    color: #0000FF;
+display:inline;
 }
 #my_info {
 	position: relative;
@@ -134,5 +139,6 @@ border-color:#78AD07;
     right:160px;
     top:200px; 
     padding: 0 15px 30px;
-    width: 300px;
+    width: 100px;
+border-radius:5px;
 }

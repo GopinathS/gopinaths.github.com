@@ -60,6 +60,11 @@ a {
 	right:80px;
  box-shadow: 12px 12px 12px #000;
 }
+.photo {
+	width:250px;
+        height:240px;
+}
+
 img{
 	width:200px;
 	height: 200px;
@@ -98,8 +103,8 @@ color: #78AD07;
 font-size: 1.5em;
 
 }
-.link{
+#link{
 color: #78AD07;
-font-size: 1.5em;
+font-size: 1.0em;
 }
 

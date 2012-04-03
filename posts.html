@@ -37,11 +37,11 @@ To view the hidden files in unix,<br>
         $ls -al                            #This displays all the hidden files/directories <br>
        <br> 
 
-<h3>UnHiding :</h3><br>
+<h3>UnHiding :</h3>
 
   To make hidden file unhide, we need to simply rename the file using the mv command.<br>
 
-<h4>Example:</h4><br>
+<h4>Example:</h4>
 
        $mv .hidden-file.txt new-file.txt      #This is the example for a file<br>
        $mv .hidden-directory  unhidden-directory <br>
@@ -55,10 +55,41 @@ Another important command in Unix is tar command.
 
   I have found a better link to explore the syntax and uses of tar command.
 Click the below link to check out. 
-<h4><a id="link" href="home.html" >TAR COMMAND</a></h4>
+<a id="link" href="http://www.computerhope.com/unix/utar.htm" >TAR COMMAND</a>
 </p>
 
+<p>
+<h3>DIRECTORY STACK STRUCTURE FOR PUSHD & POPD :</h3>
 
+Please pay attention on this topic, it may be bit confusing at the beginning but it is all about stack.
+<br>
+
+<h4>Example :</h4>
+
+
+Create a directory as below ,
+<br>
+$mkdir -p A/B/C/D/E     ----------->1 <br>
+$cd A                             ----------->2<br>
+$pushd B                       ----------->3<br>
+$cd C                             ----------->4<br>
+$pushd D                       ----------->5<br>
+$cd E                             ----------->6<br>
+
+
+$pwd<br>
+
+You will be in the last directory E.<br>
+
+$popd                           ------------->7<br>
+$popd                           ------------->8<br>
+$popd   [ This will return a warning message like ] bash: popd: directory stack empty ]                         ------------->9<br>
+
+During the steps 3 & 5 , we will the stack structure as below.<br>
+
+
+
+</p>
 
 
 

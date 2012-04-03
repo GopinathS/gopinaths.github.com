@@ -10,7 +10,8 @@ max-height:1500px;
 
 background-color:white;
 width:80%;
-height:200%;
+height:500px;
+margin-top:20px;
 margin-left:140px;
 margin-right:150px;
 border-radius:10px;
@@ -59,10 +60,7 @@ a {
       color:#020800;
 
 }
-a:visited {
-    color: #0000FF;
-display:inline;
-}
+
 #my_info {
 	position: relative;
 	font: italic 15px/200% Georgia, "Times New Roman", Times, serif;

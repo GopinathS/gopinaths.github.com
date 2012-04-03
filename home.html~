@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link rel="stylesheet" type="text/css" href="CSS/style.css" />
 
-<title>Insert title here</title>
+<title>Welcome to my Blog</title>
 </head>
 
 
@@ -19,42 +19,33 @@
 		 
 	</div>
 		<div id="my_info">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-			pulvinar diam sit amet quam vestibulum tristique. Vestibulum vehicula
-			sollicitudin risus, sed mattis ligula vulputate ut. Morbi sed
-			accumsan lorem. Sed facilisis commodo eros quis pulvinar. Cras ut
-			risus mauris, eu placerat erat. Vivamus et neque augue. Sed at velit
-			non nulla pretium porttitor vel id libero. Aliquam quis dui vitae
-			massa volutpat laoreet nec nec augue. In et justo mi, eget venenatis
-			eros. Proin et tortor non tellus convallis placerat. Integer eu velit
-			est.</p>
-		<p>In sit amet nulla sed ipsum consequat commodo. Vestibulum
-			interdum suscipit dolor, sit amet interdum nulla vestibulum vitae.
-			Donec vulputate diam sed ante venenatis tempor tempus turpis egestas.
-			Ut odio lectus, sodales et tincidunt id, luctus quis nulla. Integer
-			mollis nulla a sapien convallis in tincidunt metus malesuada. Proin
-			pharetra, nulla sed facilisis gravida, nulla urna bibendum magna, nec
-			condimentum velit quam placerat odio. Duis commodo varius justo, ac
-			eleifend nisl faucibus eu. Vestibulum commodo egestas ante eget
-			dapibus. Pellentesque arcu orci, feugiat ac iaculis et, feugiat at
-			nunc. Mauris consequat semper sapien, et varius turpis gravida id.
-			Maecenas arcu massa, dignissim ut rhoncus a, tincidunt sed lacus.</p>
-	</div>
-<div id="sidetab">
+		Overview of my blog :
 
-<p>In sit amet nulla sed ipsum consequat commodo. Vestibulum
-			interdum suscipit dolor, sit amet interdum nulla vestibulum vitae.
-			Donec vulputate diam sed ante venenatis tempor tempus turpis egestas.
-			Ut odio lectus, sodales et tincidunt id, luctus quis nulla. Integer
-			mollis nulla a sapien convallis in tincidunt metus malesuada. Proin
-			pharetra, nulla sed facilisis gravida, nulla urna bibendum magna, nec
-			condimentum velit quam placerat odio. Duis commodo varius justo, ac
-			eleifend nisl faucibus eu. Vestibulum commodo egestas ante eget
-			dapibus. Pellentesque arcu orci, feugiat ac iaculis et, feugiat at
-			nunc. Mauris consequat semper sapien, et varius turpis gravida id.
-			Maecenas arcu massa, dignissim ut rhoncus a, tincidunt sed lacus.</p>
+  I would like to share about "Why this blog is created ?"
 
-</div>
+Full Stack Developers are the developers who are capable of developing the software applications entirely.
+ I mean designing , coding and implementing front-end , business-logic and back-end .
+
+ So, In order to be a full stack developer , i have got an oppurtunity to learn the web technologies like HTML,CSS,JS etc... and repository like GITHUB.
+
+
+In this blog , these are few technologies i have been working and working as well ...
+
+I found something great and excited during my traning which i have shared and posted in this blogs,
+
+
+i) Unix Commands
+
+ii)GitHub
+
+iii)Vim Editor
+
+iv)HTML
+
+v)JavaScript
+
+Vi)CSS
 	</div>
+
 </body>
 </html>

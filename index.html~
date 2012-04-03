@@ -7,15 +7,39 @@
 <title>Insert title here</title>
 </head>
 
+
+
 <body>
 
+                   <h1>Full stack developer</h1>
 	<div id="menubar">
 		<div id="home"><a href="index.html" >Home</a></div>
 		<div id="posts"><a href="posts.html" >Recent Posts</a></div>
 		<div id="About_me"><a href="about.html">About me</a></div>
 		 
 	</div>
-	
+		<div id="my_info">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+			pulvinar diam sit amet quam vestibulum tristique. Vestibulum vehicula
+			sollicitudin risus, sed mattis ligula vulputate ut. Morbi sed
+			accumsan lorem. Sed facilisis commodo eros quis pulvinar. Cras ut
+			risus mauris, eu placerat erat. Vivamus et neque augue. Sed at velit
+			non nulla pretium porttitor vel id libero. Aliquam quis dui vitae
+			massa volutpat laoreet nec nec augue. In et justo mi, eget venenatis
+			eros. Proin et tortor non tellus convallis placerat. Integer eu velit
+			est.</p>
+		<p>In sit amet nulla sed ipsum consequat commodo. Vestibulum
+			interdum suscipit dolor, sit amet interdum nulla vestibulum vitae.
+			Donec vulputate diam sed ante venenatis tempor tempus turpis egestas.
+			Ut odio lectus, sodales et tincidunt id, luctus quis nulla. Integer
+			mollis nulla a sapien convallis in tincidunt metus malesuada. Proin
+			pharetra, nulla sed facilisis gravida, nulla urna bibendum magna, nec
+			condimentum velit quam placerat odio. Duis commodo varius justo, ac
+			eleifend nisl faucibus eu. Vestibulum commodo egestas ante eget
+			dapibus. Pellentesque arcu orci, feugiat ac iaculis et, feugiat at
+			nunc. Mauris consequat semper sapien, et varius turpis gravida id.
+			Maecenas arcu massa, dignissim ut rhoncus a, tincidunt sed lacus.</p>
+	</div>
 
 	<div></div>
 </body>

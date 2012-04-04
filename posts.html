@@ -29,7 +29,29 @@ alert(post);
 				if (receiveReq.readyState == 4 || receiveReq.readyState == 0) {
 					//Setup the connection as a GET call to SayHello.html.
 					//True explicity sets the request to asyncronous (default).
-					receiveReq.open("GET", 'http://gopinaths.github.com/vim.html', true);
+
+
+                                  if(document.getElementById('unix')!=null){
+alert("unix");
+
+                                    receiveReq.open("GET", 'http://gopinaths.github.com/unix.html', true);
+                                                      }
+else if (document.getElementById('vim')!=null){
+alert("vim");
+receiveReq.open("GET", 'http://gopinaths.github.com/vim.html', true);
+
+} else if(document.getElementById('git')!=null){
+alert("git");
+receiveReq.open("GET", 'http://gopinaths.github.com/git.html', true);
+
+}else if(document.getElementById('Html')!=null){
+alert("Html");
+receiveReq.open("GET", 'http://gopinaths.github.com/Html.html', true);
+}else {
+alert("Post is no longer available ....")}
+
+
+					
 					//Set the function that will be called when the XmlHttpRequest objects state changes.
 					receiveReq.onreadystatechange = handleSayHello; 
 					//Make the actual request.
@@ -63,32 +85,40 @@ alert(post);
 
 		        
 
-                      <p id="span_result"  ></p> <a class="read_more" href="javascript:sayHello()" name="unix">read more....</a>
+                      <p id="span_result"  ></p> <a id="unix" class="read_more" href="javascript:sayHello()" value="unix">read more....</a>
 
                         <p class="border"/>
 
 
 
+	<h3 class="shadow">Vim - Vi IMitation / Vi IMproved :</h3>
 
+       <p>It is great to hear that a text editor managed to survive almost 20 years and counting .... :)<br>
                         
 
-		        <p id="span_result"  ></p><a class="read_more" href="javascript:sayHello()" name="vim">read more....</a>
+		        <p id="span_result"  ></p><a id="vim" class="read_more" href="javascript:sayHello()" value="vim">read more....</a>
 
                         <p class="border"/>
 
 
 
 
-                      
+     <h3 class="shadow">GIT - Distributed Version Control System  :    </h3>
 
-		        <p id="span_result"  ></p>  <a class="read_more" href="javascript:sayHello()" name="git">read more....</a>
+
+  <p>I was referring a book from the source (Progit ) , it is really good source for all the beginners .<br>
+  It really helped me understand from scratch which means the book has enough information to set up the GIT , about commands , customization and lot more.</p>                 
+
+		        <p id="span_result"  ></p>  <a id="git" class="read_more" href="javascript:sayHello()" value="git">read more....</a>
 
                         <p class="border"/>
-
+<h3 class="shadow">Hyper Text Markup Language :</h3>
+<p>
+" You're not making your whatever-it-is-you're-making for you. You're making it to help someone else find the information she needs.</p>
                         
 
 		        <p id="span_result"  ></p>
-<a class="read_more" href="javascript:sayHello()" name="html">read more....</a>
+<a id="Html" class="read_more" href="javascript:sayHello()" value="Html">read more....</a>
                         <p class="border"/> 
 
 

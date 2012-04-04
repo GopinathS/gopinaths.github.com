@@ -1,67 +1,40 @@
 <html>
 
 <body>
-	<h3>Hiding :</h3>
+	<h3>Vim - Vi IMitation / Vi IMproved :</h3>
 
-	<p>To create a file/directory as a hidden file/directory , just add
-		dot (.) operator in front of the file name. Thats gives you the hidden
-		file.</p>
-	<h4>Example:</h4>
-	<p>
-		$touch .filename.txt # This is example to create the hidden file<br>
-		$mkdir .directory # This is example to create the hidden directory<br>
+       <p>It is great to hear that a text editor managed to survive almost 20 years and counting .... :)<br>
 
-		To view the hidden files in unix,<br> $ls -al #This displays all
-		the hidden files/directories
-	</p>
-	<p class="border" />
-	<h3>UnHiding :</h3>
+        We can divide the tasks which we perform in/on
+text files.<br>
 
-	<p>To make hidden file unhide, we need to simply rename the file
-		using the mv command.</p>
+        1)  Creating the file :<br>
+           
+               $ vim <filename><br>
+               $ gvim <filename>Nbr>
 
-	<h4>Example:</h4>
-	<p>
-		$mv .hidden-file.txt new-file.txt #This is the example for a file<br>
-		$mv .hidden-directory unhidden-directory <br>
-	</p>
+<p class="border" />
+        2)  Exiting the file.<br>
+           
+              :q  ---->   Quit Vim. This fails when changes have been made.<br>
+              :q[uit]! ---->    Quit without writing.<br>
+              :cq[uit]   ---->  Quit always, without writing.<br>
+              :wq   ---->  Write the current file and exit.<br>
+              :wq!   ---->  Write the current file and exit always.<br>
+              :wq {file} ---->    Write to {file}. Exit if not editing the last<br>
+              :wq! {file}   ---->  Write to {file} and exit always.<br>
+               ZZ   ---->  Write current file, if modified, and exit.<br>
+               ZQ   ---->  Quit current file and exit (same as ":q!").<br>
+<p class="border" /> 
+        3)  Modifying the fie,<br>
 
-	<p class="border" />
+             Now we reached a  very important section where lots of operations are performed like searching , replacing , deleting etc.....
+<br>
+       Searching for an interesting option which makes Vim a champion ....<br>
+</p>
+	
 
-	<h3>Tar Command</h3>
-
-	<p>
-		Another important command in Unix is tar command. I have found a
-		better link to explore the syntax and uses of tar command. Click the
-		below link to check out. <a id="link"
-			href="http://www.computerhope.com/unix/utar.htm">TAR COMMAND</a>
-	</p>
-	<p class="border" />
-
-	<h3>Directory Stack Structure For PUSHD & POPD :</h3>
-	<p>Please pay attention on this topic, it may be bit confusing at
-		the beginning but it is all about stack.</p>
-
-	<h4>Example :</h4>
-
-	<p>
-		Create a directory as below , <br> $mkdir -p A/B/C/D/E
-		----------->1 <br> $cd A ----------->2<br> $pushd B
-		----------->3<br> $cd C ----------->4<br> $pushd D
-		----------->5<br> $cd E ----------->6<br> $pwd<br> You
-		will be in the last directory E.<br> $popd ------------->7<br>
-		$popd ------------->8<br> $popd [ This will return a warning
-		message like ] bash: popd: directory stack empty ] ------------->9<br>
-
-		During the steps 3 & 5 , we will the stack structure as below.<br>
-
-
-
-	</p>
-
-	<p class="border" />
-
-
+<p class="border" />
 	
 </body>
 

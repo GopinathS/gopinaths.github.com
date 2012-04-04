@@ -1,0 +1,32 @@
+<html>
+
+<body>
+
+<h3 class="shadow">GIT - Distributed Version Control System  :    </h3>
+
+
+  <p>I was referring a book from the source (Progit ) , it is really good source for all the beginners .<br>
+  It really helped me understand from scratch which means the book has enough information to set up the GIT , about commands , customization and lot more.
+<br>
+
+                  This book really helped me to understand what is distributed version control system and its advantages over VCN & CVCN (Centralized Version Control System).<br>
+                  The three states of GIT and scope of each state is awesome. At the end of first chapter , i had installed git in my machine successfully.<br>
+
+
+              1. To create a new repository<br>
+              2. To clone the existing repository from remote.<br>
+              3. Modifying,staging and committing the changes and  viewing the  history and tagging..<br>
+
+
+
+Branching is the very important topic in GIT because it takes us to from start to end. I mean from memory management to branch management.
+<br>
+ The technique followed for the branching is  awesome and that makes difference between other VCS.
+<br>
+     In this topic , we had an exercise to create a branch in our machine and i tried to pull a branch from the admin account and it worked fine.
+<br>
+Cloning the repository by using different protocols is quiet interesting and useful too.
+</p>
+</body>
+
+</html>

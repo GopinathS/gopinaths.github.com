@@ -19,7 +19,9 @@
 				}
 			}			
 			//Get our browser specific XmlHttpRequest object.
-			var receiveReq = getXmlHttpRequestObject();		
+			var receiveReq = getXmlHttpRequestObject();
+                       var post = document.localName;
+alert(post);		
 			//Initiate the asyncronous request.
 			function sayHello() {
 				//If our XmlHttpRequest object is not in the middle of a request, start the new asyncronous call.
@@ -54,7 +56,9 @@
 	</div>
 		<div id="my_info">
 
-                        <a class="read_more" href="javascript:sayHello()" name="unix">Read more</a>
+<h2 class="shadow">Unix Commands</h2>
+<p>I was practicing the Unix commands and i have found an interesting command.</p>
+                        <a class="read_more" href="javascript:sayHello()" name="unix">read more....</a>
 
 		        
 
@@ -66,7 +70,7 @@
 
 
                         <a class="read_more" href="javascript:sayHello()" name="vim">Read more</a>
-<p>222222222222222Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
 		        <p id="span_result"  ></p>
 
                         <p class="border"/>
@@ -75,13 +79,13 @@
 
 
                         <a class="read_more" href="javascript:sayHello()" name="git">Read more</a>
-<p>3333333333333333Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
 		        <p id="span_result"  ></p>
 
                         <p class="border"/>
 
                         <a class="read_more" href="javascript:sayHello()" name="html">Read more</a>
-<p>444444444444444444Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
 		        <p id="span_result"  ></p>
 
                         <p class="border"/> 

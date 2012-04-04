@@ -33,7 +33,7 @@
 					//True explicity sets the request to asyncronous (default).
    receiveReq.open("GET", 'http://gopinaths.github.com/unix.html', true);
                                   	//Set the function that will be called when the XmlHttpRequest objects state changes.
-					receiveReq.onreadystatechange = handleSayHello; 
+					receiveReq.onreadystatechange = handleSayHellounix; 
 					//Make the actual request.
 					receiveReq.send(null);
 				}			
@@ -81,6 +81,15 @@ function sayHellohtml() {
 	}
 }
 
+//Called every time our XmlHttpRequest objects state changes.
+			function handleSayHellounix() {
+				//Check to see if the XmlHttpRequests state is finished.
+				if (receiveReq.readyState == 4) {
+					//Set the contents of our span element to the result of the asyncronous call.
+					document.getElementById('span_resultunix').innerHTML = receiveReq.responseText;
+				}
+			}
+
 function handleSayHellovim() {
 				//Check to see if the XmlHttpRequests state is finished.
 				if (receiveReq.readyState == 4) {
@@ -114,14 +123,7 @@ function handleSayHellohtml() {
 
 
 
-			//Called every time our XmlHttpRequest objects state changes.
-			function handleSayHello() {
-				//Check to see if the XmlHttpRequests state is finished.
-				if (receiveReq.readyState == 4) {
-					//Set the contents of our span element to the result of the asyncronous call.
-					document.getElementById('span_result').innerHTML = receiveReq.responseText;
-				}
-			}
+			
 			</script>
 </head>
 <body><div id="container">
@@ -141,7 +143,7 @@ function handleSayHellohtml() {
 
 		        
 
-                      <p id="span_result"  ></p> <a id="unix" class="read_more" href="javascript:sayHello()" value="unix">read more....</a>
+                      <p id="span_resultunix"  ></p> <a id="unix" class="read_more" href="javascript:sayHello()" value="unix">read more....</a>
 
                         <p class="border"/>
 

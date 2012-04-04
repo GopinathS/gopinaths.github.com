@@ -1,12 +1,68 @@
 <html>
 
 <body>
+	<h3>Hiding :</h3>
 
-dgf dgfjksdsdf<br>
-sdfgsdbfbvsdkfvsd<br>
-fsdfhsdf<br>
-sdf
+	<p>To create a file/directory as a hidden file/directory , just add
+		dot (.) operator in front of the file name. Thats gives you the hidden
+		file.</p>
+	<h4>Example:</h4>
+	<p>
+		$touch .filename.txt # This is example to create the hidden file<br>
+		$mkdir .directory # This is example to create the hidden directory<br>
 
+		To view the hidden files in unix,<br> $ls -al #This displays all
+		the hidden files/directories
+	</p>
+	<p class="border" />
+	<h3>UnHiding :</h3>
+
+	<p>To make hidden file unhide, we need to simply rename the file
+		using the mv command.</p>
+
+	<h4>Example:</h4>
+	<p>
+		$mv .hidden-file.txt new-file.txt #This is the example for a file<br>
+		$mv .hidden-directory unhidden-directory <br>
+	</p>
+
+	<p class="border" />
+
+	<h3>Tar Command</h3>
+
+	<p>
+		Another important command in Unix is tar command. I have found a
+		better link to explore the syntax and uses of tar command. Click the
+		below link to check out. <a id="link"
+			href="http://www.computerhope.com/unix/utar.htm">TAR COMMAND</a>
+	</p>
+	<p class="border" />
+
+	<h3>Directory Stack Structure For PUSHD & POPD :</h3>
+	<p>Please pay attention on this topic, it may be bit confusing at
+		the beginning but it is all about stack.</p>
+
+	<h4>Example :</h4>
+
+	<p>
+		Create a directory as below , <br> $mkdir -p A/B/C/D/E
+		----------->1 <br> $cd A ----------->2<br> $pushd B
+		----------->3<br> $cd C ----------->4<br> $pushd D
+		----------->5<br> $cd E ----------->6<br> $pwd<br> You
+		will be in the last directory E.<br> $popd ------------->7<br>
+		$popd ------------->8<br> $popd [ This will return a warning
+		message like ] bash: popd: directory stack empty ] ------------->9<br>
+
+		During the steps 3 & 5 , we will the stack structure as below.<br>
+
+
+
+	</p>
+
+	<p class="border" />
+
+
+	
 </body>
 
 

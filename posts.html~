@@ -61,7 +61,7 @@ function sayHellogit() {
 		
 		receiveReq.open("GET", 'http://gopinaths.github.com/git.html', true);
 		
-		receiveReq.onreadystatechange = handleSayHello;
+		receiveReq.onreadystatechange = handleSayHellogit;
 		
 		receiveReq.send(null);
 		
@@ -74,20 +74,38 @@ function sayHellohtml() {
 		
 		receiveReq.open("GET", 'http://gopinaths.github.com/Html.html', true);
 		
-		receiveReq.onreadystatechange = handleSayHello;
+		receiveReq.onreadystatechange = handleSayHellohtml;
 		
 		receiveReq.send(null);
 		
 	}
 }
 
+function handleSayHellovim() {
+				//Check to see if the XmlHttpRequests state is finished.
+				if (receiveReq.readyState == 4) {
+					//Set the contents of our span element to the result of the asyncronous call.
+					document.getElementById('span_resultvim').innerHTML = receiveReq.responseText;
+				}
+			}
 
 
+function handleSayHellogit() {
+				//Check to see if the XmlHttpRequests state is finished.
+				if (receiveReq.readyState == 4) {
+					//Set the contents of our span element to the result of the asyncronous call.
+					document.getElementById('span_resultgit').innerHTML = receiveReq.responseText;
+				}
+			}
 
 
-
-
-
+function handleSayHellohtml() {
+				//Check to see if the XmlHttpRequests state is finished.
+				if (receiveReq.readyState == 4) {
+					//Set the contents of our span element to the result of the asyncronous call.
+					document.getElementById('span_resulthtml').innerHTML = receiveReq.responseText;
+				}
+			}
 
 
 
@@ -134,7 +152,7 @@ function sayHellohtml() {
        <p>It is great to hear that a text editor managed to survive almost 20 years and counting .... :)<br>
                         
 
-		        <p id="span_result"  ></p><a id="vim" class="read_more" href="javascript:sayHellovim()" value="vim">read more....</a>
+		        <p id="span_resultvim"  ></p><a id="vim" class="read_more" href="javascript:sayHellovim()" value="vim">read more....</a>
 
                         <p class="border"/>
 
@@ -147,7 +165,7 @@ function sayHellohtml() {
   <p>I was referring a book from the source (Progit ) , it is really good source for all the beginners .<br>
   It really helped me understand from scratch which means the book has enough information to set up the GIT , about commands , customization and lot more.</p>                 
 
-		        <p id="span_result"  ></p>  <a id="git" class="read_more" href="javascript:sayHellogit()" value="git">read more....</a>
+		        <p id="span_resultgit"  ></p>  <a id="git" class="read_more" href="javascript:sayHellogit()" value="git">read more....</a>
 
                         <p class="border"/>
 <h3 class="shadow">Hyper Text Markup Language :</h3>
@@ -155,7 +173,7 @@ function sayHellohtml() {
 " You're not making your whatever-it-is-you're-making for you. You're making it to help someone else find the information she needs.</p>
                         
 
-		        <p id="span_result"  ></p>
+		        <p id="span_resulthtml"  ></p>
 <a id="Html" class="read_more" href="javascript:sayHellohtml()" value="Html">read more....</a>
                         <p class="border"/> 
 

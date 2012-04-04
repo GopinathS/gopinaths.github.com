@@ -17,47 +17,85 @@
 					//their browser.
 					alert("Your browser doesn't support the XmlHttpRequest object.  Better upgrade to Firefox.");
 				}
-			}			
+			}		
+
+
 			//Get our browser specific XmlHttpRequest object.
 			var receiveReq = getXmlHttpRequestObject();
                        
 			//Initiate the asyncronous request.
 			function sayHello() {
-var post = document.localName;
-alert(post);		
+
+		
 				//If our XmlHttpRequest object is not in the middle of a request, start the new asyncronous call.
 				if (receiveReq.readyState == 4 || receiveReq.readyState == 0) {
 					//Setup the connection as a GET call to SayHello.html.
 					//True explicity sets the request to asyncronous (default).
-
-
-                                  if(document.getElementById('unix')!=null){
-alert("unix");
-
-                                    receiveReq.open("GET", 'http://gopinaths.github.com/unix.html', true);
-                                                      }
-else if (document.getElementById('vim')!=null){
-alert("vim");
-receiveReq.open("GET", 'http://gopinaths.github.com/vim.html', true);
-
-} else if(document.getElementById('git')!=null){
-alert("git");
-receiveReq.open("GET", 'http://gopinaths.github.com/git.html', true);
-
-}else if(document.getElementById('Html')!=null){
-alert("Html");
-receiveReq.open("GET", 'http://gopinaths.github.com/Html.html', true);
-}else {
-alert("Post is no longer available ....")}
-
-
-					
-					//Set the function that will be called when the XmlHttpRequest objects state changes.
+   receiveReq.open("GET", 'http://gopinaths.github.com/unix.html', true);
+                                  	//Set the function that will be called when the XmlHttpRequest objects state changes.
 					receiveReq.onreadystatechange = handleSayHello; 
 					//Make the actual request.
 					receiveReq.send(null);
 				}			
 			}
+
+
+
+function sayHellovim() {
+	
+	if (receiveReq.readyState == 4 || receiveReq.readyState == 0) {
+		
+		receiveReq.open("GET", 'http://gopinaths.github.com/vim.html', true);
+		
+		receiveReq.onreadystatechange = handleSayHello;
+		
+		receiveReq.send(null);
+		
+	}
+}
+
+
+function sayHellogit() {
+	
+	if (receiveReq.readyState == 4 || receiveReq.readyState == 0) {
+		
+		receiveReq.open("GET", 'http://gopinaths.github.com/git.html', true);
+		
+		receiveReq.onreadystatechange = handleSayHello;
+		
+		receiveReq.send(null);
+		
+	}
+}
+
+function sayHellohtml() {
+	
+	if (receiveReq.readyState == 4 || receiveReq.readyState == 0) {
+		
+		receiveReq.open("GET", 'http://gopinaths.github.com/Html.html', true);
+		
+		receiveReq.onreadystatechange = handleSayHello;
+		
+		receiveReq.send(null);
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 			//Called every time our XmlHttpRequest objects state changes.
 			function handleSayHello() {
 				//Check to see if the XmlHttpRequests state is finished.
@@ -96,7 +134,7 @@ alert("Post is no longer available ....")}
        <p>It is great to hear that a text editor managed to survive almost 20 years and counting .... :)<br>
                         
 
-		        <p id="span_result"  ></p><a id="vim" class="read_more" href="javascript:sayHello()" value="vim">read more....</a>
+		        <p id="span_result"  ></p><a id="vim" class="read_more" href="javascript:sayHellovim()" value="vim">read more....</a>
 
                         <p class="border"/>
 
@@ -109,7 +147,7 @@ alert("Post is no longer available ....")}
   <p>I was referring a book from the source (Progit ) , it is really good source for all the beginners .<br>
   It really helped me understand from scratch which means the book has enough information to set up the GIT , about commands , customization and lot more.</p>                 
 
-		        <p id="span_result"  ></p>  <a id="git" class="read_more" href="javascript:sayHello()" value="git">read more....</a>
+		        <p id="span_result"  ></p>  <a id="git" class="read_more" href="javascript:sayHellogit()" value="git">read more....</a>
 
                         <p class="border"/>
 <h3 class="shadow">Hyper Text Markup Language :</h3>
@@ -118,7 +156,7 @@ alert("Post is no longer available ....")}
                         
 
 		        <p id="span_result"  ></p>
-<a id="Html" class="read_more" href="javascript:sayHello()" value="Html">read more....</a>
+<a id="Html" class="read_more" href="javascript:sayHellohtml()" value="Html">read more....</a>
                         <p class="border"/> 
 
 

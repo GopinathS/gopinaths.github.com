@@ -4,6 +4,45 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link rel="stylesheet" type="text/css" href="CSS/style.css" />
 
+<script language="JavaScript" type="text/javascript">
+			//Gets the browser specific XmlHttpRequest Object
+			function getXmlHttpRequestObject() {
+				if (window.XMLHttpRequest) {
+					return new XMLHttpRequest(); //Not IE
+				} else if(window.ActiveXObject) {
+					return new ActiveXObject("Microsoft.XMLHTTP"); //IE
+				} else {
+					//Display your error message here. 
+					//and inform the user they might want to upgrade
+					//their browser.
+					alert("Your browser doesn't support the XmlHttpRequest object.  Better upgrade to Firefox.");
+				}
+			}			
+			//Get our browser specific XmlHttpRequest object.
+			var receiveReq = getXmlHttpRequestObject();		
+			//Initiate the asyncronous request.
+			function sayHello() {
+				//If our XmlHttpRequest object is not in the middle of a request, start the new asyncronous call.
+				if (receiveReq.readyState == 4 || receiveReq.readyState == 0) {
+					//Setup the connection as a GET call to SayHello.html.
+					//True explicity sets the request to asyncronous (default).
+					receiveReq.open("GET", 'http://gopinaths.github.com/vim.html', true);
+					//Set the function that will be called when the XmlHttpRequest objects state changes.
+					receiveReq.onreadystatechange = handleSayHello; 
+					//Make the actual request.
+					receiveReq.send(null);
+				}			
+			}
+			//Called every time our XmlHttpRequest objects state changes.
+			function handleSayHello() {
+				//Check to see if the XmlHttpRequests state is finished.
+				if (receiveReq.readyState == 4) {
+					//Set the contents of our span element to the result of the asyncronous call.
+					document.getElementById('span_result').innerHTML = receiveReq.responseText;
+				}
+			}
+			</script>
+
 <title>Welcome to my Blog</title>
 </head>
 
@@ -12,16 +51,19 @@
 <body><div id="container">
 
                    <h1>Full stack developer</h1>
-	<div id="menubar">
+	       <div id="menubar">
 		<div id="home"><a href="index.html" >Home</a></div>
 		<div id="posts"><a href="posts.html" >Recent Posts</a></div>
 		<div id="About_me"><a href="about.html">About me</a></div>
 		 
-	</div>
-		<div id="my_info">
-		<h2>Overview of my blog :</h2>
+	       </div>
 
-  I would like to share about <h3>"Why this blog is created ?"</h3>
+
+		<div id="my_info">
+
+		<h2>Overview of my blog :</h2>
+<p>
+  I would like to share about</p> <h3>"Why this blog is created ?"</h3><p>
 
 Full Stack Developers are the developers who are capable of developing the software applications entirely.<br>
  I mean designing , coding and implementing front-end , business-logic and back-end .
@@ -32,8 +74,8 @@ Full Stack Developers are the developers who are capable of developing the softw
 In this blog , these are few technologies i have been working and working as well ...
 
 I found something great and excited during my traning which i have shared and posted in this blogs,
+</p>
 
-<br>
 <h4>i) Unix Commands</h4>
 
 <h4>ii)GitHub</h4>
@@ -44,10 +86,17 @@ I found something great and excited during my traning which i have shared and po
 
 <h4>v)JavaScript</h4>
 
-Vi)CSS
-	</div>
+<h4>Vi)CSS</h4>
 
-	
+
+
+	            </div>
+
+	<input type="submit" onclick="sayHello()" value="Comment" />
+
+		
+		<p id="span_result"  ></p>
+
 	</div>
 </body>
 </html>

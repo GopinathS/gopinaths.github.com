@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="CSS/style.css" />
+
+<title>Welcome to my Blog</title><script language="JavaScript" type="text/javascript">
+			//Gets the browser specific XmlHttpRequest Object
+			function getXmlHttpRequestObject() {
+				if (window.XMLHttpRequest) {
+					return new XMLHttpRequest(); //Not IE
+				} else if(window.ActiveXObject) {
+					return new ActiveXObject("Microsoft.XMLHTTP"); //IE
+				} else {
+					//Display your error message here. 
+					//and inform the user they might want to upgrade
+					//their browser.
+					alert("Your browser doesn't support the XmlHttpRequest object.  Better upgrade to Firefox.");
+				}
+			}			
+			//Get our browser specific XmlHttpRequest object.
+			var receiveReq = getXmlHttpRequestObject();		
+			//Initiate the asyncronous request.
+			function sayHello() {
+				//If our XmlHttpRequest object is not in the middle of a request, start the new asyncronous call.
+				if (receiveReq.readyState == 4 || receiveReq.readyState == 0) {
+					//Setup the connection as a GET call to SayHello.html.
+					//True explicity sets the request to asyncronous (default).
+					receiveReq.open("GET", 'http://gopinaths.github.com/vim.html', true);
+					//Set the function that will be called when the XmlHttpRequest objects state changes.
+					receiveReq.onreadystatechange = handleSayHello; 
+					//Make the actual request.
+					receiveReq.send(null);
+				}			
+			}
+			//Called every time our XmlHttpRequest objects state changes.
+			function handleSayHello() {
+				//Check to see if the XmlHttpRequests state is finished.
+				if (receiveReq.readyState == 4) {
+					//Set the contents of our span element to the result of the asyncronous call.
+					document.getElementById('span_result').innerHTML = receiveReq.responseText;
+				}
+			}
+			</script>
+</head>
+<body><div id="container">
+
+<h1>Full stack developer</h1>
+	<div id="menubar">
+		<div id="home"><a href="index.html" >Home</a></div>
+		<div id="posts"><a href="posts.html" >Recent Posts</a></div>
+		<div id="About_me"><a href="about.html">About me</a></div>
+		 
+	</div>
+		<div id="my_info">
+
+
+<h2 class="shadow">Unix Commands</h2>
+
+		<p>I was practicing the Unix commands and i have found an interesting command.</p>
+
+<h3>Hiding : </h3>
+
+<p>
+To create a file/directory as a hidden file/directory , just add dot (.) operator in front  of the file name. Thats gives you the hidden file.
+</p><h4>
+Example:</h4>
+<p>
+        $touch .filename.txt     # This is example to create the hidden file<br>
+        $mkdir .directory         # This is example to create the hidden directory<br>
+
+To view the hidden files in unix,<br>
+
+        $ls -al                            #This displays all the hidden files/directories 
+       </p>
+<p class="border"/>
+<h3>UnHiding :</h3>
+
+  <p>To make hidden file unhide, we need to simply rename the file using the mv command.</p>
+
+<h4>Example:</h4>
+<p>
+       $mv .hidden-file.txt new-file.txt      #This is the example for a file<br>
+       $mv .hidden-directory  unhidden-directory <br>
+</p>
+
+<p class="border"/>
+		<h3>Tar Command </h3>
+
+<p>
+Another important command in Unix is tar command.
+
+  I have found a better link to explore the syntax and uses of tar command.
+Click the below link to check out. 
+<a id="link" href="http://www.computerhope.com/unix/utar.htm" >TAR COMMAND</a>
+</p>
+<p class="border"/>
+
+<h3>Directory Stack Structure For PUSHD & POPD :</h3>
+<p>
+Please pay attention on this topic, it may be bit confusing at the beginning but it is all about stack.
+</p>
+
+<h4>Example :</h4>
+
+<p>
+Create a directory as below ,
+<br>
+$mkdir -p A/B/C/D/E     ----------->1 <br>
+$cd A                             ----------->2<br>
+$pushd B                       ----------->3<br>
+$cd C                             ----------->4<br>
+$pushd D                       ----------->5<br>
+$cd E                             ----------->6<br>
+
+
+
+$pwd<br>
+
+You will be in the last directory E.<br>
+
+$popd                           ------------->7<br>
+$popd                           ------------->8<br>
+$popd   [ This will return a warning message like ] bash: popd: directory stack empty ]                         ------------->9<br>
+
+During the steps 3 & 5 , we will the stack structure as below.<br>
+
+
+
+</p>
+
+<p class="border"/>
+
+	</div>
+	
+	</div>
+<div id="sidetab">
+
+<a href="">Go Top</a>
+
+
+</div>
+</body>
+</html>

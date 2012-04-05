@@ -74,13 +74,15 @@ a {
 margin-bottom:10px;
 height:80%;
 	margin-left: 25px;
+padding-right:10px;
 }
 
 #photo {
 	position: relative;
 	float: right;
+       left:-35px;
 	right:80px;
-        top: -280px;
+        top: -600px;
         box-shadow: 12px 12px 12px #000;
 }
 .photo {
@@ -155,5 +157,5 @@ font-size:100%;
 font-weight:normal;
 }
 .read_more{
-float="right";
+float:right;
 }

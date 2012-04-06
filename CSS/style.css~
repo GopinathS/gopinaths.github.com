@@ -177,7 +177,7 @@ height:50%;
 padding:bottom:10px;
 }
 
-#disqus_thread1{
+#comment_thread1{
 width:70%;
 padding-left:35px;
 padding-right:50px;

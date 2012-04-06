@@ -179,6 +179,6 @@ padding:bottom:10px;
 
 #disqus_thread{
 width:70%;
-margin-left:35px;
-margin-right:15px;
+padding-left:35px;
+padding-right:15px;
 }

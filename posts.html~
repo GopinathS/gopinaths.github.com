@@ -250,7 +250,7 @@ function toggleDiv(divid){
 		        <p id="span_resulthtml"  ></p>
 
 <a id="read" class="read_more" href="javascript:sayHellohtml()" value="Html">read more....</a>
-
+<a href="javascript:;" onmousedown="toggleDiv('span_resulthtml');" >click here to minimize..</a>
                         <p class="border"/> 
 
 

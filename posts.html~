@@ -134,7 +134,7 @@ function toggleDiv(divid){
   
       document.getElementById(divid).style.display = 'none';
      
-      var continue_button = document.getElementById('continue');
+      var continue_button = document.getElementById('unix');
   continue_button.style.visibility = 'hidden';
 
     }

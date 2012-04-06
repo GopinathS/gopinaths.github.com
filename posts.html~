@@ -185,7 +185,7 @@ function toggleDiv(divid){
                       <p id="span_resultunix"  ></p> 
 
 <a  id="read" class="read_more" href="javascript:sayHellounix()" value="unix">read more....</a><br>
-<a  id="read" class="read_more" href="toggleDiv(read)" value="unix">minimize</a>
+<a href="javascript:;" onmousedown="toggleDiv('mydiv');">Toggle Div Visibility</a>
 
 
                         <p class="border"/>

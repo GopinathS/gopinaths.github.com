@@ -11,7 +11,11 @@
 
 
 
-<title>Welcome to my Blog</title><script language="JavaScript" type="text/javascript">
+<title>Welcome to my Blog</title>
+
+
+
+<script language="JavaScript" type="text/javascript">
 
 			// Gets the browser specific XmlHttpRequest Object
 
@@ -51,9 +55,6 @@
 
 			function sayHellounix() {
 
-
-
-		
 
 				// If our XmlHttpRequest object is not in the middle of a
 				// request, start the new asyncronous call.
@@ -186,14 +187,11 @@ function handleSayHellohtml() {
 
 
 
-
-
-
-
-
-			
-
 			</script>
+
+
+
+
 
 </head>
 
@@ -293,7 +291,7 @@ function handleSayHellohtml() {
 
 		        <p id="span_resulthtml"  ></p>
 
-<a id="Html" class="read_more" href="javascript:sayHellohtml()" value="Html">read more....</a>
+<a id="read" class="read_more" href="javascript:sayHellohtml()" value="Html">read more....</a>
 
                         <p class="border"/> 
 

@@ -11,70 +11,43 @@
 
 
 
-<title>Welcome to my Blog</title><script language="JavaScript" type="text/javascript">
+<title>Welcome to my Blog</title>
 
-			// Gets the browser specific XmlHttpRequest Object
 
+
+<script language="JavaScript" type="text/javascript">
+			//Gets the browser specific XmlHttpRequest Object
 			function getXmlHttpRequestObject() {
-
 				if (window.XMLHttpRequest) {
-
-					return new XMLHttpRequest(); // Not IE
-
+					return new XMLHttpRequest(); //Not IE
 				} else if(window.ActiveXObject) {
-
-					return new ActiveXObject("Microsoft.XMLHTTP"); // IE
-
+					return new ActiveXObject("Microsoft.XMLHTTP"); //IE
 				} else {
-
-					// Display your error message here.
-
-					// and inform the user they might want to upgrade
-
-					// their browser.
-
+					//Display your error message here. 
+					//and inform the user they might want to upgrade
+					//their browser.
 					alert("Your browser doesn't support the XmlHttpRequest object.  Better upgrade to Firefox.");
-
 				}
-
 			}		
 
 
-
-			// Get our browser specific XmlHttpRequest object.
-
+			//Get our browser specific XmlHttpRequest object.
 			var receiveReq = getXmlHttpRequestObject();
-
                        
-
-			// Initiate the asyncronous request.
-
+			//Initiate the asyncronous request.
 			function sayHellounix() {
 
-
-
 		
-
-				// If our XmlHttpRequest object is not in the middle of a
-				// request, start the new asyncronous call.
-
+				//If our XmlHttpRequest object is not in the middle of a request, start the new asyncronous call.
 				if (receiveReq.readyState == 4 || receiveReq.readyState == 0) {
-
-					// Setup the connection as a GET call to SayHello.html.
-
-					// True explicity sets the request to asyncronous (default).
+					//Setup the connection as a GET call to SayHello.html.
+					//True explicity sets the request to asyncronous (default).
                                         receiveReq.open("GET", 'http://gopinaths.github.com/unix.html', true);
-                                  	// Set the function that will be called when
-									// the XmlHttpRequest objects state changes.
-
+                                  	//Set the function that will be called when the XmlHttpRequest objects state changes.
 					receiveReq.onreadystatechange = handleSayHellounix; 
-
-					// Make the actual request.
-
+					//Make the actual request.
 					receiveReq.send(null);
-
 				}			
-
 			}
 
 
@@ -119,70 +92,40 @@ function sayHellohtml() {
 	}
 }
 
-// Called every time our XmlHttpRequest objects state changes.
-
+//Called every time our XmlHttpRequest objects state changes.
 			function handleSayHellounix() {
-
-				// Check to see if the XmlHttpRequests state is finished.
-
+				//Check to see if the XmlHttpRequests state is finished.
 				if (receiveReq.readyState == 4) {
-
-					// Set the contents of our span element to the result of the
-					// asyncronous call.
-
+					//Set the contents of our span element to the result of the asyncronous call.
 					document.getElementById('span_resultunix').innerHTML = receiveReq.responseText;
-
 				}
-
 			}
 
 function handleSayHellovim() {
-
-				// Check to see if the XmlHttpRequests state is finished.
-
+				//Check to see if the XmlHttpRequests state is finished.
 				if (receiveReq.readyState == 4) {
-
-					// Set the contents of our span element to the result of the
-					// asyncronous call.
-
+					//Set the contents of our span element to the result of the asyncronous call.
 					document.getElementById('span_resultvim').innerHTML = receiveReq.responseText;
-
 				}
-
 			}
 
 
 function handleSayHellogit() {
-
-				// Check to see if the XmlHttpRequests state is finished.
-
+				//Check to see if the XmlHttpRequests state is finished.
 				if (receiveReq.readyState == 4) {
-
-					// Set the contents of our span element to the result of the
-					// asyncronous call.
-
+					//Set the contents of our span element to the result of the asyncronous call.
 					document.getElementById('span_resultgit').innerHTML = receiveReq.responseText;
-
 				}
-
 			}
 
 
 function handleSayHellohtml() {
-
-				// Check to see if the XmlHttpRequests state is finished.
-
+				//Check to see if the XmlHttpRequests state is finished.
 				if (receiveReq.readyState == 4) {
-
-					// Set the contents of our span element to the result of the
-					// asyncronous call.
-
+					//Set the contents of our span element to the result of the asyncronous call.
 					document.getElementById('span_resulthtml').innerHTML = receiveReq.responseText;
-
 				}
-
 			}
-
 
 
 
@@ -192,8 +135,10 @@ function handleSayHellohtml() {
 
 
 			
-
 			</script>
+
+
+
 
 </head>
 

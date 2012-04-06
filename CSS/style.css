@@ -62,8 +62,14 @@ box-shadow: 9px 9px 9px #000;
 
 a {
 	text-decoration: none;
-        font-size:150%;
-      color:#020800;
+        font-size:130%;
+      color:red;
+
+}
+a#read {
+	text-decoration: none;
+        font-size:100%;
+      color:red;
 
 }
 
@@ -134,6 +140,12 @@ font-size: 1.7em;
 h4{
 color: #78AD07;
 font-size: 1.3em;
+
+
+}
+#top{
+position:relative;
+clear:both;
 
 
 }

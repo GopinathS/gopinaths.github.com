@@ -309,7 +309,7 @@ function handleSayHellohtml() {
 
 
 
-<a href="">Go Top</a>
+
 
 
 
@@ -331,7 +331,7 @@ function handleSayHellohtml() {
 
 
 
-<div id="comment_thread1"></div>
+<div id="disqus_thread"></div>
 <div id="social_tab">
 <iframe src="http://www.facebook.com/plugins/like.php?href=http://gopinaths.github.com/" scrolling="no" frameborder="0"
 
@@ -341,7 +341,7 @@ function handleSayHellohtml() {
 
 </div>
 
-
+<div id="top"><a href="">Go Top</a></div>
 </body>
 
 </html>

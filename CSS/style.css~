@@ -168,11 +168,17 @@ float:right;
 float:right;
 position:relative;
 top:-750px;
-border-style:solid;
+border-style:thin;
 border-left-width:1px;
 
 
 width:20%;
 height:50%;
 padding:bottom:10px;
+}
+
+#disqus_thread{
+width:70%;
+margin-left:15px;
+margin-right:15px;
 }

@@ -1,43 +1,80 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
 <html>
+
 <head>
+
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
 
 <link rel="stylesheet" type="text/css" href="CSS/style.css" />
 
+
+
 <title>Welcome to my Blog</title><script language="JavaScript" type="text/javascript">
-			//Gets the browser specific XmlHttpRequest Object
+
+			// Gets the browser specific XmlHttpRequest Object
+
 			function getXmlHttpRequestObject() {
+
 				if (window.XMLHttpRequest) {
-					return new XMLHttpRequest(); //Not IE
+
+					return new XMLHttpRequest(); // Not IE
+
 				} else if(window.ActiveXObject) {
-					return new ActiveXObject("Microsoft.XMLHTTP"); //IE
+
+					return new ActiveXObject("Microsoft.XMLHTTP"); // IE
+
 				} else {
-					//Display your error message here. 
-					//and inform the user they might want to upgrade
-					//their browser.
+
+					// Display your error message here.
+
+					// and inform the user they might want to upgrade
+
+					// their browser.
+
 					alert("Your browser doesn't support the XmlHttpRequest object.  Better upgrade to Firefox.");
+
 				}
+
 			}		
 
 
-			//Get our browser specific XmlHttpRequest object.
+
+			// Get our browser specific XmlHttpRequest object.
+
 			var receiveReq = getXmlHttpRequestObject();
+
                        
-			//Initiate the asyncronous request.
+
+			// Initiate the asyncronous request.
+
 			function sayHellounix() {
 
+
+
 		
-				//If our XmlHttpRequest object is not in the middle of a request, start the new asyncronous call.
+
+				// If our XmlHttpRequest object is not in the middle of a
+				// request, start the new asyncronous call.
+
 				if (receiveReq.readyState == 4 || receiveReq.readyState == 0) {
-					//Setup the connection as a GET call to SayHello.html.
-					//True explicity sets the request to asyncronous (default).
+
+					// Setup the connection as a GET call to SayHello.html.
+
+					// True explicity sets the request to asyncronous (default).
                                         receiveReq.open("GET", 'http://gopinaths.github.com/unix.html', true);
-                                  	//Set the function that will be called when the XmlHttpRequest objects state changes.
+                                  	// Set the function that will be called when
+									// the XmlHttpRequest objects state changes.
+
 					receiveReq.onreadystatechange = handleSayHellounix; 
-					//Make the actual request.
+
+					// Make the actual request.
+
 					receiveReq.send(null);
+
 				}			
+
 			}
 
 
@@ -82,40 +119,70 @@ function sayHellohtml() {
 	}
 }
 
-//Called every time our XmlHttpRequest objects state changes.
+// Called every time our XmlHttpRequest objects state changes.
+
 			function handleSayHellounix() {
-				//Check to see if the XmlHttpRequests state is finished.
+
+				// Check to see if the XmlHttpRequests state is finished.
+
 				if (receiveReq.readyState == 4) {
-					//Set the contents of our span element to the result of the asyncronous call.
+
+					// Set the contents of our span element to the result of the
+					// asyncronous call.
+
 					document.getElementById('span_resultunix').innerHTML = receiveReq.responseText;
+
 				}
+
 			}
 
 function handleSayHellovim() {
-				//Check to see if the XmlHttpRequests state is finished.
+
+				// Check to see if the XmlHttpRequests state is finished.
+
 				if (receiveReq.readyState == 4) {
-					//Set the contents of our span element to the result of the asyncronous call.
+
+					// Set the contents of our span element to the result of the
+					// asyncronous call.
+
 					document.getElementById('span_resultvim').innerHTML = receiveReq.responseText;
+
 				}
+
 			}
 
 
 function handleSayHellogit() {
-				//Check to see if the XmlHttpRequests state is finished.
+
+				// Check to see if the XmlHttpRequests state is finished.
+
 				if (receiveReq.readyState == 4) {
-					//Set the contents of our span element to the result of the asyncronous call.
+
+					// Set the contents of our span element to the result of the
+					// asyncronous call.
+
 					document.getElementById('span_resultgit').innerHTML = receiveReq.responseText;
+
 				}
+
 			}
 
 
 function handleSayHellohtml() {
-				//Check to see if the XmlHttpRequests state is finished.
+
+				// Check to see if the XmlHttpRequests state is finished.
+
 				if (receiveReq.readyState == 4) {
-					//Set the contents of our span element to the result of the asyncronous call.
+
+					// Set the contents of our span element to the result of the
+					// asyncronous call.
+
 					document.getElementById('span_resulthtml').innerHTML = receiveReq.responseText;
+
 				}
+
 			}
+
 
 
 
@@ -125,41 +192,79 @@ function handleSayHellohtml() {
 
 
 			
+
 			</script>
+
 </head>
+
 <body><div id="container">
 
+
+
 <h1>Full stack developer</h1>
+
 	<div id="menubar">
+
 		<div id="home"><a href="index.html" >Home</a></div>
+
 		<div id="posts"><a href="posts.html" >Recent Posts</a></div>
+
 		<div id="About_me"><a href="about.html">About me</a></div>
+
 		 
+
 	</div>
+
 		<div id="my_info">
 
+
+
 <h3 class="shadow">Unix Commands</h3>
+
 <p>I was practicing the Unix commands and i have found an interesting command.</p>
+
                        
 
+
+
 		        
+
+
 
                       <p id="span_resultunix"  ></p> 
 
 <a  id="unix" class="read_more" href="javascript:sayHellounix()" value="unix">read more....</a>
 
+
+
                         <p class="border"/>
+
+
+
+
 
 
 
 	<h3 class="shadow">Vim - Vi IMitation / Vi IMproved :</h3>
 
+
+
        <p>It is great to hear that a text editor managed to survive almost 20 years and counting .... :)<br>
+
                         
+
+
 
 		        <p id="span_resultvim"  ></p><a id="vim" class="read_more" href="javascript:sayHellovim()" value="vim">read more....</a>
 
+
+
                         <p class="border"/>
+
+
+
+
+
 
 
 
@@ -170,30 +275,50 @@ function handleSayHellohtml() {
   <p>I was referring a book from the source (Progit ) , it is really good source for all the beginners .<br>
   It really helped me understand from scratch which means the book has enough information to set up the GIT , about commands , customization and lot more.</p>                 
 
+
+
 		        <p id="span_resultgit"  ></p>  <a id="git" class="read_more" href="javascript:sayHellogit()" value="git">read more....</a>
 
+
+
                         <p class="border"/>
+
 <h3 class="shadow">Hyper Text Markup Language :</h3>
 <p>
 " You're not making your whatever-it-is-you're-making for you. You're making it to help someone else find the information she needs.</p>
+
                         
 
+
+
 		        <p id="span_resulthtml"  ></p>
+
 <a id="Html" class="read_more" href="javascript:sayHellohtml()" value="Html">read more....</a>
+
                         <p class="border"/> 
+
+
+
+
 
 
 
 	         </div>
 
 
+
+
+
 <a href="">Go Top</a>
+
+
 
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'gopis'; // required: replace example with your forum shortname
+    var disqus_shortname = 'gopis'; // required: replace example with your forum
+									// shortname
 
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
@@ -202,8 +327,10 @@ function handleSayHellohtml() {
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
 
 <div id="social_tab">
 <iframe src="http://www.facebook.com/plugins/like.php?href=http://gopinaths.github.com/" scrolling="no" frameborder="0"
@@ -211,7 +338,10 @@ function handleSayHellohtml() {
 			style="border:none; width:200px; height:80px"></iframe>
 </div>
 
+
 </div>
 
+
 </body>
+
 </html>

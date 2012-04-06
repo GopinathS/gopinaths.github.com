@@ -99,6 +99,10 @@ function sayHellohtml() {
 					//Set the contents of our span element to the result of the asyncronous call.
 					document.getElementById('span_resultunix').innerHTML = receiveReq.responseText;
 				}
+
+
+
+
 			}
 
 function handleSayHellovim() {
@@ -134,8 +138,7 @@ function toggleDiv(divid){
   
       document.getElementById(divid).style.display = 'none';
      
-      var continue_button = document.getElementById('read');
-  continue_button.style.visibility = 'hidden';
+     
 
     }
   
@@ -211,7 +214,7 @@ function toggleDiv(divid){
 		        <p id="span_resultvim"  ></p><a id="read" class="read_more" href="javascript:sayHellovim()" value="vim">read more....</a>
 
 <a href="javascript:;" onmousedown="toggleDiv('span_resultvim');">Toggle Div Visibility</a>
-
+<a href="javascript:;" onmousedown="toggleDiv('span_resultvim');" >click here to minimize..</a>
                         <p class="border"/>
 
 
@@ -232,7 +235,7 @@ function toggleDiv(divid){
 
 		        <p id="span_resultgit"  ></p>  <a id="read" class="read_more" href="javascript:sayHellogit()" value="git">read more....</a>
 
-
+<a href="javascript:;" onmousedown="toggleDiv('span_resultgit');" >click here to minimize..</a>
 
                         <p class="border"/>
 
@@ -247,7 +250,7 @@ function toggleDiv(divid){
 		        <p id="span_resulthtml"  ></p>
 
 <a id="read" class="read_more" href="javascript:sayHellohtml()" value="Html">read more....</a>
-
+<a href="javascript:;" onmousedown="toggleDiv('span_resulthtml');" >click here to minimize..</a>
                         <p class="border"/> 
 
 

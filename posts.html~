@@ -233,7 +233,7 @@ function handleSayHellohtml() {
 
                       <p id="span_resultunix"  ></p> 
 
-<a  id="unix" class="read_more" href="javascript:sayHellounix()" value="unix">read more....</a>
+<a  id="read" class="read_more" href="javascript:sayHellounix()" value="unix">read more....</a>
 
 
 
@@ -255,7 +255,7 @@ function handleSayHellohtml() {
 
 
 
-		        <p id="span_resultvim"  ></p><a id="vim" class="read_more" href="javascript:sayHellovim()" value="vim">read more....</a>
+		        <p id="span_resultvim"  ></p><a id="read" class="read_more" href="javascript:sayHellovim()" value="vim">read more....</a>
 
 
 
@@ -277,7 +277,7 @@ function handleSayHellohtml() {
 
 
 
-		        <p id="span_resultgit"  ></p>  <a id="git" class="read_more" href="javascript:sayHellogit()" value="git">read more....</a>
+		        <p id="span_resultgit"  ></p>  <a id="read" class="read_more" href="javascript:sayHellogit()" value="git">read more....</a>
 
 
 
@@ -338,10 +338,10 @@ function handleSayHellohtml() {
 			style="border:none; width:200px; height:80px"></iframe>
 </div>
 
-
+<div id="top"><a href="">Go Top</a></div>
 </div>
 
-<div id="top"><a href="">Go Top</a></div>
+
 </body>
 
 </html>

@@ -1,0 +1,14 @@
+{
+    "Distributed system": {
+        "0": "Centralized system":{
+        
+        "desc":"Question: To what extent must the system perform processing functions and transfer data across a distributed architecture rather than on a centralized one
+Rationale: This factor measures the complexity of the environment in which the system must perform processing functions and transfer data.  Complexity increases with systems that are distributed as opposed to centralized.  For example, the system may run on a relatively simple centralized or single-tenant system.  In the alternative, as complexity increases, the system may run on a distributed (e.g., n-tier solution) or multi-tenant architectures. "
+                }
+                
+                
+        "3": "Distributed system",
+        "5": "Multi-tenant System"
+		
+    }
+}
